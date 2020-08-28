@@ -1,2 +1,2 @@
 # sidney
-My website!
+Welcome to Sidney Schwartz's website!
