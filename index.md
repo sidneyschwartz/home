@@ -1,3 +1,9 @@
+---
+title: home
+layout: template
+filename: index.md
+--- 
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/sidneyschwartz/sidney/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
