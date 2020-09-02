@@ -23,6 +23,9 @@ body {
   text-align:center;
   background-color: white;
   /* background-image: linear-gradient(to bottom right, turquoise, rgb(85, 231, 0)); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header a {
@@ -56,12 +59,18 @@ body {
 
 /* for "Contact & About" */
 .header-right {
-  float:right;
+  /* float:right; */
+  position: relative;
+  right: 0;
+  /* width: 20vw; */
   background-color: yellow;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #header-contact {
-    margin-right: 20px;
+    /* margin-right: 20px; */
+    margin-right: 5vw;
 }
 
 #header-about {
@@ -77,22 +86,28 @@ body {
 <!-- header -->
 
 <div class="header">
-    <a href='/home' class="logo">Sidney Schwartz</a>
-
-    <div class="header-right">
-        
-        <div id="header-about">
-            <a href="/home/about">About</a>
-        </div>
-
-        <div id="header-contact">
-            <a href="/home/contact">Contact</a>
-        </div>
-    </div>
 
     <div class="header-left">
         <a href='/home' class="active">Projects</a>
     </div>
+
+    <a href='/home' class="logo">Sidney Schwartz</a>
+
+    <div class="header-right">
+        <!-- <a href="/home/about">About</a>
+        <a href="/home/contact">Contact</a> -->
+
+        <div id="header-contact">
+            <a href="/home/contact">Contact</a>
+        </div>
+
+
+        <div id="header-about">
+            <a href="/home/about">About</a>
+        </div>
+
+    </div>
+
 
 </div>
 
