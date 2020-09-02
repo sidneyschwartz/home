@@ -1,0 +1,128 @@
+
+/* TO-DO
+- FIX HEADER LAYOUT/POSITIONING
+- CHOOSE / INSTERT IMAGES / VIDEO CONTENT
+
+ */
+
+body { 
+     margin:0; 
+}
+
+/* Style the header */
+.header {
+  overflow: hidden;
+  padding: 50px 20px;
+  text-align:center;
+  background-color: white;
+  background-image: linear-gradient(to bottom right, turquoise, rgb(85, 231, 0));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: greenyellow; */
+}
+
+.header a {
+    color: rgb(61, 61, 61);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; 
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+  /* background-color: #fc7878;
+  padding: 10px 10px;
+  border-radius: 25px; */
+}
+
+.header a.logo {
+    font-size: 32px;
+    font-weight:bold;
+    color:black;
+    left:40%;
+    position: absolute;
+}
+
+/* for "Work" */
+.header a.active {
+    color: rgb(0, 0, 0);
+}
+
+.header a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* for "Contact & About" */
+.header-right {
+    /* float:right; */
+    position: relative;
+    right: 0;
+    /* width: 20vw; */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#header-contact {
+    /* margin-right: 20px; */
+    margin-right: 5vw;
+}
+
+#header-about {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-left {
+  float:left;
+}
+
+/* box 1 */
+
+.btn-img {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  max-height: 100%;
+  background-color:white;
+  cursor: pointer;
+  display: block;
+  border: none;
+}
+
+.btn-img .img-wrap {
+    margin: 10px;
+}
+
+.btn-img:hover {
+    background-color: black;
+}
+
+img.resize {
+    width: 500px;
+    height: 500px;
+}
+
+img.absolute {
+  left: 10%;
+  position: absolute;
+  overflow:hidden;
+}
+
+img:hover{
+    opacity: .9;
+    transition: transform 1s;
+    transform: scale(1.2);
+    border:green;
+    border-width: 10px;
+}
+
+
+/* box 2 */
+
+/* box 3 */
+
+/* box 4 */
+
+/* box 5 */
+
+/* box 6 */
