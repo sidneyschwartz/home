@@ -74,6 +74,19 @@ body {
   float:left;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    justify-content: flex-end;
+
+}
+
+.flex-container > button {
+    background-color: #f1f1f1;
+    width: 500px;
+  }
+
 /* box 1 */
 
 .btn-img {
@@ -84,10 +97,10 @@ body {
   max-height: 100%;
   background-color:white;
   cursor: pointer;
-  display: block;
-  border: none;
-  float: left;
-  left: 200px;
+  /* display: block; */
+  border: solid;
+  /* float: left; */
+  /* left: 200px; */
 }
 
 .btn-img:hover {
@@ -134,37 +147,6 @@ img.resize {
 
 
 /* box 2 */
-
-.btn-img2 {
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    max-height: 100%;
-    background-color:white;
-    cursor: pointer;
-    display: block;
-    border: none;
-    float: right;
-    right: 200px;
-  }
-
-.btn-img2:hover {
-    background-color: black;
-    box-shadow: inset 0px 0px 0px 10px white;
-}
-
-.btn-img2:hover img{
-    opacity: .7;
-    transition: transform 1s;
-    transform: scale(1.2);
-}
-
-.btn-img2:hover .img-description {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .2s, visibility .2s;
-}
 
 /* box 3 */
 
