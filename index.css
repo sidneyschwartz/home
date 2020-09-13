@@ -13,7 +13,7 @@ body {
   padding: 50px 20px;
   text-align:center;
   background-color: white;
-  background-image: linear-gradient(to bottom right, turquoise, rgb(85, 231, 0));
+  /* background-image: linear-gradient(to bottom right, turquoise, rgb(85, 231, 0)); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +39,8 @@ body {
     color:black;
     left:40%;
     position: absolute;
+    font-family: 'Poppins';
+
 }
 
 /* for "Work" */
@@ -59,19 +61,34 @@ body {
     /* width: 20vw; */
     display: flex;
     flex-flow: row wrap;
+    font-family: 'Poppins';
+    
 }
 
 #header-contact {
     /* margin-right: 20px; */
-    margin-right: 5vw;
+    margin-right: 25px;
+    font-family: 'Poppins';
+
 }
 
 #header-about {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins';
+    margin-right: 80px;
+}
+
+#header-projects {
+    font-family: 'Poppins';
+    margin-left: 80px;
 }
 
 .header-left {
   float:left;
+}
+
+.headline {
+    text-align: center;
+    font-family: 'Poppins';font-size: 22px;
 }
 
 .flex-container {
@@ -104,8 +121,8 @@ body {
 }
 
 .btn-img:hover {
-    background-color: grey;
-    box-shadow: inset 0px 0px 0px 10px white;
+    /* background-color: grey;
+    box-shadow: inset 0px 0px 0px 10px white; */
 }
 
 img.resize {
@@ -122,6 +139,21 @@ img.aloe {
 
 }
 
+img.skol {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+img.brown {
+    /* width: 400px;
+    height: 500px;*/
+    object-fit: cover; 
+    max-width: 100%;
+        max-height: 100%;
+}
+
 .img-description {
     position: absolute;
     top: 0px;
@@ -129,7 +161,7 @@ img.aloe {
     left: 0px;
     right: 0px;
     font-size: 40px;
-    color: white;
+    color: black;
     visibility: hidden;
     z-index: 2;
     vertical-align: middle;
