@@ -142,7 +142,7 @@ img.aloe {
 img.skol {
     width: 400px;
     height: 500px;
-    object-fit: cover;
+    /* object-fit: cover; */
 
 }
 
