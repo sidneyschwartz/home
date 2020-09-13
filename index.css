@@ -5,6 +5,7 @@
 
 body { 
      margin:0; 
+     background-color: paleturquoise;
 }
 
 /* Style the header */
@@ -88,7 +89,14 @@ body {
 
 .headline {
     text-align: center;
-    font-family: 'Poppins';font-size: 22px;
+    font-family: 'Poppins';font-size: 40px;
+}
+
+table {
+    width: 100%;
+    border: solid;
+    background-color: black;
+    margin: 100;
 }
 
 .flex-container {
@@ -104,30 +112,45 @@ body {
     width: 500px;
   }
 
+tr {
+    text-align: center;
+    border: 1px solid #ddd;
+    /* z-index: 5; */
+}
+
+
+
 /* box 1 */
 
 .btn-img {
   width: 40%;
-  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
   position: relative;
   height: 520px;
   background-color:white;
   cursor: pointer;
   border: none;
-  margin-left: 100px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  /* text-align: center; */
+
   /* float: left; */
   /* left: 200px; */
 }
 
 .btn-img:hover {
-    /* background-color: grey;
-    box-shadow: inset 0px 0px 0px 10px white; */
+    /* background-color: grey; */
+    /* box-shadow: inset 0px 0px 0px 10px white;  */
 }
 
 img.resize {
-    width: 100%;
-    height: 500px;
+    width: 62%;
+    height: auto;
     object-fit: cover;
 
 }
@@ -140,23 +163,23 @@ img.aloe {
 }
 
 img.skol {
-    width: 400px;
-    height: 500px;
-    /* object-fit: cover; */
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 
 }
 
 img.brown {
     /* width: 400px;
     height: 500px;*/
-    object-fit: cover; 
-    max-width: 100%;
+    /* object-fit: cover;  */
+    max-width: 75%;
         max-height: 100%;
 }
 
 .img-description {
     position: absolute;
-    top: 0px;
+    top: 250px;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -170,10 +193,11 @@ img.brown {
     height: max-content;
     line-height: 350px;
     padding: 50px;
+    font-family: 'Poppins';
 }
 
 .btn-img:hover img{
-    opacity: .7;
+    opacity: 1;
     transition: transform 1s;
     transform: scale(1.2);
 }
@@ -181,7 +205,9 @@ img.brown {
 .btn-img:hover .img-description {
     visibility: visible;
     opacity: 1;
-    transition: opacity .2s, visibility .2s;
+    top: 210px;
+    transition: opacity .2s, visibility .2s, top 1s;
+    ;
 }
 
 
