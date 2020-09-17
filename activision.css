@@ -1,0 +1,26 @@
+.title {
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.text {
+    font-family: 'Poppins';
+    margin: 100px;
+}
+
+.pic {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.jobtitle {
+    font-family: 'Poppins';
+    margin: auto;
+    margin-left: 25px;
+}
+
+.act {
+    font-family: 'Poppins';
+    margin: 25px
+}

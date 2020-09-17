@@ -1,8 +1,3 @@
-
-/* TO-DO
-- Dynamically shape images based on stretch of webpage, place next to each other at center
- */
-
 body { 
      margin:0; 
      background-color: paleturquoise;
@@ -41,7 +36,6 @@ body {
     left:40%;
     position: absolute;
     font-family: 'Poppins';
-
 }
 
 /* for "Work" */
@@ -50,7 +44,7 @@ body {
 }
 
 .header a:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: none;
     color: black;
 }
 
@@ -58,7 +52,7 @@ body {
 .header-right {
     /* float:right; */
     position: relative;
-    right: 0;
+    /* right: 0; */
     /* width: 20vw; */
     display: flex;
     flex-flow: row wrap;
@@ -66,16 +60,85 @@ body {
     
 }
 
+.nav div {
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav {
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+    cursor: pointer;
+}
+
+.nav:hover div {
+    width: 30px;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:rebeccapurple;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 4;
+    padding-left: 0%;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    margin-right: 10px;
+  }
+
+  #main {
+    transition: margin-right .5s;
+    padding: 16px;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
 #header-contact {
     /* margin-right: 20px; */
-    margin-right: 25px;
+    /* margin-right: 25px; */
     font-family: 'Poppins';
-
+    font-size: 80;
 }
 
 #header-about {
     font-family: 'Poppins';
-    margin-right: 80px;
+    font-size: 40;
+    /* margin-right: 80px; */
 }
 
 #header-projects {
@@ -90,6 +153,12 @@ body {
 .headline {
     text-align: center;
     font-family: 'Poppins';font-size: 40px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
 }
 
 table {
@@ -108,7 +177,7 @@ table {
 }
 
 .flex-container > button {
-    background-color: #f1f1f1;
+    background-color: blue;
     width: 500px;
   }
 

@@ -1,0 +1,12 @@
+.about {
+    font-family: 'Poppins';
+    margin: 25px
+}
+
+img.headshot {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: gray;
+}
