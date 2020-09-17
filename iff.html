@@ -19,24 +19,40 @@
 
     <a href='/home' class="logo">Sidney Schwartz</a>
 
-    <div class="header-right">
-        <!-- <a href="/home/about">About</a>
-        <a href="/home/contact">Contact</a> -->
+    <!-- <div class="header-right"> -->
 
-        <div>
-            <!-- /home/contact -->
-            <a href="file:///Users/sidneyschwartz/Desktop/sidney/csci/mywebsite/home/contact.html" id="header-contact">Contact</a>
-        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <!-- /home/contact -->
+                <a href="/home/contact" id="header-contact">Contact</a>
+                   
+                <a href="/home/about" id="header-about">About</a>                <!-- /home/about -->
 
-        <div>
-            <!-- /home/about -->
-            <a href="file:///Users/sidneyschwartz/Desktop/sidney/csci/mywebsite/home/about.html" id="header-about">About</a>
-        </div>
+          </div>
+
+          <div id="main">
+            <a href="#" class="nav" onclick="openNav()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </a>          
 
     </div>
 
 
 </div>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "200px";
+      document.getElementById("main").style.marginRight = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginRight= "0";
+    }
+    </script>
 
 <!-- end of header -->
 
